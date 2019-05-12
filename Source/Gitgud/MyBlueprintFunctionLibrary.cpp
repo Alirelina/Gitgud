@@ -11,10 +11,10 @@ FString UMyBlueprintFunctionLibrary::generateRandomString()
 {
 	FString mapString = "";
 	while (mapString.Len() != 100) {
-		int32 randomInt = rand() % 4;
+		int32 randomInt = rand() % 3;
 		mapString.Append(checkAvailable(randomInt));
 	}
-	for (int i = 0; i < 4; i++) {
+	for (int i = 0; i < 3; i++) {
 		categoryCounter[i] = 0;
 	}
 	return mapString;
