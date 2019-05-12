@@ -20,9 +20,9 @@ class GITGUD_API UMyBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 		static FString generateRandomString();
 		static FString checkAvailable(int randomInt);
 
-		static int32 categoryCounter[4];
-		static int32 maxCounter[4];
-		static FString category[4];
+		static int32 categoryCounter[3];
+		static int32 maxCounter[3];
+		static FString category[3];
 	
 	
 	

@@ -2,9 +2,9 @@
 
 #include "MyBlueprintFunctionLibrary.h"
 
-FString UMyBlueprintFunctionLibrary:: category[4] = { "v", "d", "g", "m" };
-int32 UMyBlueprintFunctionLibrary::categoryCounter[4] = { 0,0,0,0 };
-int32 UMyBlueprintFunctionLibrary::maxCounter[4] = { 1,35,35,35 };
+FString UMyBlueprintFunctionLibrary:: category[3] = { "m", "g", "d" };
+int32 UMyBlueprintFunctionLibrary::categoryCounter[3] = { 0,0,0 };
+int32 UMyBlueprintFunctionLibrary::maxCounter[3] = { 35,60,25 };
 
 
 FString UMyBlueprintFunctionLibrary::generateRandomString()
@@ -26,7 +26,7 @@ FString UMyBlueprintFunctionLibrary::checkAvailable(int randomInt)
 		if (categoryCounter[randomInt] == maxCounter[randomInt]) {
 			UE_LOG(LogTemp, Log, TEXT("sup"));
 			randomInt++;
-			if (randomInt == 4) {
+			if (randomInt == 3) {
 				randomInt = 0;
 			}
 
