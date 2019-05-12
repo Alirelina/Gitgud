@@ -2,7 +2,7 @@
 
 #include "MyBlueprintFunctionLibrary.h"
 
-FString UMyBlueprintFunctionLibrary:: category[4] = { "v", "d", "g", "m" };
+FString UMyBlueprintFunctionLibrary:: category[4] = { "0", "1", "2", "3" };
 int32 UMyBlueprintFunctionLibrary::categoryCounter[4] = { 0,0,0,0 };
 int32 UMyBlueprintFunctionLibrary::maxCounter[4] = { 1,35,35,35 };
 
